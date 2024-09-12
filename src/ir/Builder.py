@@ -5,6 +5,7 @@ class Builder:
     def __init__(self, module: ir.Module):
         self.module = module
         self.context = module.context
+        self.builder = None
         self.builder: ir.IRBuilder
 
     def getModule(self) -> ir.Module:
@@ -53,3 +54,12 @@ class Builder:
         if self.builder is None:
             raise RuntimeError("Cannot create statement outside the allowed scope")
         return self.builder.alloca(typ, name=name)
+
+    def CreateReturn(self, value: ir.Value = None) -> ir.Value:
+        if self.builder is None:
+            raise RuntimeError("Cannot create statement outside the allowed scope")
+
+        if value is None:
+            return self.builder.ret_void()
+
+        return self.builder.ret(value)

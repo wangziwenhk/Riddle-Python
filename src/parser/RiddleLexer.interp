@@ -81,8 +81,8 @@ Public
 Protected
 Private
 Override
-True
-False
+True_
+False_
 Static
 Const
 LeftBracket
@@ -146,8 +146,8 @@ Public
 Protected
 Private
 Override
-True
-False
+True_
+False_
 Static
 Const
 LeftBracket

@@ -1,4 +1,4 @@
-# Generated from C:/Users/Administrator/PycharmProjects/Riddle-Python/RiddleParser.g4 by ANTLR 4.13.1
+# Generated from C:/Users/wangz/PycharmProjects/Riddle-Python/RiddleParser.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -210,7 +210,7 @@ class RiddleParser ( Parser ):
 
     symbolicNames = [ "<INVALID>", "Var", "Val", "For", "While", "If", "Else", 
                       "Func", "Return", "Import", "Package", "Class", "Public", 
-                      "Protected", "Private", "Override", "True", "False", 
+                      "Protected", "Private", "Override", "True_", "False_", 
                       "Static", "Const", "LeftBracket", "RightBracket", 
                       "LeftSquare", "RightSquare", "LeftCurly", "RightCurly", 
                       "Colon", "Semi", "Comma", "Equal", "Assign", "Greater", 
@@ -1480,7 +1480,7 @@ class RiddleParser ( Parser ):
                 self.match(RiddleParser.RightBracket)
                 self.state = 190
                 localctx.body = self.statement_ed()
-                localctx.hasElse = false
+                localctx.hasElse = False
                 pass
 
             elif la_ == 2:
@@ -1499,7 +1499,7 @@ class RiddleParser ( Parser ):
                 self.match(RiddleParser.Else)
                 self.state = 199
                 localctx.elseBody = self.statement_ed()
-                localctx.hasElse = true
+                localctx.hasElse = True
                 pass
 
 
@@ -4118,10 +4118,10 @@ class RiddleParser ( Parser ):
             self.value = None
 
         def True_(self):
-            return self.getToken(RiddleParser.True, 0)
+            return self.getToken(RiddleParser.True_, 0)
 
         def False_(self):
-            return self.getToken(RiddleParser.False, 0)
+            return self.getToken(RiddleParser.False_, 0)
 
         def getRuleIndex(self):
             return RiddleParser.RULE_boolean
@@ -4155,13 +4155,13 @@ class RiddleParser ( Parser ):
                 self.enterOuterAlt(localctx, 1)
                 self.state = 419
                 self.match(RiddleParser.True_)
-                localctx.value = true
+                localctx.value=True
                 pass
             elif token in [17]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 421
                 self.match(RiddleParser.False_)
-                localctx.value = false
+                localctx.value=False
                 pass
             else:
                 raise NoViableAltException(self)
@@ -4262,9 +4262,7 @@ class RiddleParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 427
             localctx._Float = self.match(RiddleParser.Float)
-
-                    localctx.value =  stod((None if localctx._Float is None else localctx._Float.text))
-                
+            localctx.value = float((None if localctx._Float is None else localctx._Float.text))
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -4330,33 +4328,25 @@ class RiddleParser ( Parser ):
                 self.enterOuterAlt(localctx, 1)
                 self.state = 430
                 localctx._Decimal = self.match(RiddleParser.Decimal)
-
-                        localctx.value =  stoi((None if localctx._Decimal is None else localctx._Decimal.text))
-                    
+                localctx.value = int((None if localctx._Decimal is None else localctx._Decimal.text))
                 pass
             elif token in [50]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 432
                 localctx._Hexadecimal = self.match(RiddleParser.Hexadecimal)
-
-                        localctx.value =  stoi((None if localctx._Hexadecimal is None else localctx._Hexadecimal.text).substr(2),nullptr,16)
-                    
+                localctx.value = int((None if localctx._Hexadecimal is None else localctx._Hexadecimal.text)[2:],16)
                 pass
             elif token in [53]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 434
                 localctx._Binary = self.match(RiddleParser.Binary)
-
-                        localctx.value =  stoi((None if localctx._Binary is None else localctx._Binary.text).substr(2),nullptr,2)
-                    
+                localctx.value = int((None if localctx._Binary is None else localctx._Binary.text)[2:],2)
                 pass
             elif token in [52]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 436
                 localctx._Octal = self.match(RiddleParser.Octal)
-
-                        localctx.value =  stoi((None if localctx._Octal is None else localctx._Octal.text).substr(1),nullptr,8)
-                    
+                localctx.value = int((None if localctx._Octal is None else localctx._Octal.text)[1:],8)
                 pass
             else:
                 raise NoViableAltException(self)

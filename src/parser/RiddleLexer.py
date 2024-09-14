@@ -1,4 +1,4 @@
-# Generated from C:/Users/Administrator/PycharmProjects/Riddle-Python/RiddleLexer.g4 by ANTLR 4.13.1
+# Generated from C:/Users/wangz/PycharmProjects/Riddle-Python/RiddleLexer.g4 by ANTLR 4.13.1
 from antlr4 import *
 from io import StringIO
 import sys
@@ -247,7 +247,7 @@ class RiddleLexer(Lexer):
     symbolicNames = [ "<INVALID>",
             "Var", "Val", "For", "While", "If", "Else", "Func", "Return", 
             "Import", "Package", "Class", "Public", "Protected", "Private", 
-            "Override", "True", "False", "Static", "Const", "LeftBracket", 
+            "Override", "True_", "False_", "Static", "Const", "LeftBracket", 
             "RightBracket", "LeftSquare", "RightSquare", "LeftCurly", "RightCurly", 
             "Colon", "Semi", "Comma", "Equal", "Assign", "Greater", "Less", 
             "LeftLeft", "RightRight", "RightRightRight", "Add", "Sub", "Star", 
@@ -259,7 +259,7 @@ class RiddleLexer(Lexer):
 
     ruleNames = [ "Var", "Val", "For", "While", "If", "Else", "Func", "Return", 
                   "Import", "Package", "Class", "Public", "Protected", "Private", 
-                  "Override", "True", "False", "Static", "Const", "LeftBracket", 
+                  "Override", "True_", "False_", "Static", "Const", "LeftBracket", 
                   "RightBracket", "LeftSquare", "RightSquare", "LeftCurly", 
                   "RightCurly", "Colon", "Semi", "Comma", "Equal", "Assign", 
                   "Greater", "Less", "LeftLeft", "RightRight", "RightRightRight", 

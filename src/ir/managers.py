@@ -1,4 +1,4 @@
-import types
+from src.ir.types import Variable
 
 
 class VarManager:
@@ -12,7 +12,7 @@ class VarManager:
             raise KeyError('The variable does not exist')
         return self.vars[item][-1]
 
-    def set(self, key: str, value: types.Variable):
+    def set(self, key: str, value: Variable):
         self.vars[key].append(value)
 
     # 进入下一个作用域
@@ -29,3 +29,6 @@ class VarManager:
                 self.vars.pop(i)
 
         self.defined.pop()
+
+    def deep(self) -> int:
+        return len(self.defined)

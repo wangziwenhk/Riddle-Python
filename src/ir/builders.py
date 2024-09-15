@@ -1,8 +1,7 @@
-from venv import create
-
-from dill.pointers import children
 from llvmlite import ir
-from src.ir.managers import VarManager
+
+from src.ir.managers import VarManager, ClassManager
+from src.ir.types import Class
 
 
 class Builder:
@@ -12,6 +11,7 @@ class Builder:
         self.llvm_builder = None
         self.llvm_builder: ir.IRBuilder
         self.var_manager = VarManager()
+        self.class_manager = ClassManager()
 
     def get_module(self) -> ir.Module:
         return self.module
@@ -24,7 +24,10 @@ class Builder:
             args = []
 
         # 创建函数
-        func_type = ir.FunctionType(return_type, args)
+        args_type = []
+        for i in args:
+            args_type.append(i)
+        func_type = ir.FunctionType(return_type, args_type)
         function = ir.Function(self.module, func_type, name)
 
         # 进入函数代码块
@@ -71,7 +74,7 @@ class Builder:
             raise RuntimeError('Cannot create statement outside the allowed scope')
 
         if self.var_manager.deep() == 1:
-            return self.create_variable(typ, name, value, is_const)
+            return self.create_global_var(typ, name, value, is_const)
         else:
             return self.llvm_builder.alloca(typ, name=name, is_const=is_const)
 
@@ -99,3 +102,9 @@ class Builder:
 
     def pop(self):
         self.var_manager.pop()
+
+    def getType(self, name: str) -> ir.Type:
+        return self.class_manager.getType(name)
+
+    def getClass(self, name: str) -> Class:
+        return self.class_manager.getClass(name)

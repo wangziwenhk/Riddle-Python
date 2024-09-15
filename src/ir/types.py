@@ -5,6 +5,7 @@ from llvmlite import ir
 
 class TypeID(enum.Enum):
     VariableType = 1
+    ClassType = 2
 
 
 class BaseType:
@@ -15,17 +16,18 @@ class BaseType:
         return self.type
 
 
-class Variable(BaseType):
-    def __init__(self, name: str, value: ir.Value):
-        super().__init__(TypeID.VariableType)
+class Class(BaseType):
+    def __init__(self, context: ir.Context, name: str, types: dict[str:ir.Type] = None, packed: bool = False):
+        super().__init__(TypeID.ClassType)
         self.name: str = name
-        self.value: ir.Value = value
+        self.struct: ir.IdentifiedStructType = ir.IdentifiedStructType(context, name, packed)
+        self.members: dict[int, str] = {}
+        if types is not None:
+            for i in types:
+                print(i)
 
     def getName(self) -> str:
         return self.name
 
-    def getValue(self) -> ir.Value:
-        return self.value
-
-    def setValue(self, value: ir.Value):
-        self.value = value
+    def addType(self, name: str, typ: ir.Type):
+        self.struct.set_body(self.struct.elements.append(typ))

@@ -1,6 +1,7 @@
 from llvmlite import ir
 
 from src.ir.builders import Builder
+from src.ir.types import Class
 from src.parser.RiddleParser import RiddleParser as Parser, RiddleParser
 from src.parser.RiddleParserVisitor import RiddleParserVisitor
 
@@ -16,14 +17,15 @@ class GenVisitor(RiddleParserVisitor):
         self.builder.pop()
 
     def visitFuncDefine(self, ctx: RiddleParser.FuncDefineContext):
-        func_name: str = ctx.funcName
+        func_name: str = ctx.funcName.text
         func_args: dict[str:str] = self.visit(ctx.args)
         if ctx.returnType is None:
             return_type = ir.VoidType()
         else:
-            return_type = self.visit(ctx.returnType)
+            return_type = self.visitTypeName(ctx.returnType)
 
         self.builder.create_function(func_name, return_type, func_args)
+        self.visit(ctx.body)
 
     def visitDefineArgs(self, ctx: RiddleParser.DefineArgsContext) -> dict[str:str]:
         args: dict[str:str] = {}
@@ -45,3 +47,7 @@ class GenVisitor(RiddleParserVisitor):
                 args[temp_name] = temp_type
 
         return args
+
+    def visitTypeName(self, ctx: RiddleParser.TypeNameContext) -> ir.Type:
+        name = ctx.getText()
+        return self.builder.getType(name)

@@ -97,9 +97,11 @@ class Builder:
 
         return self.llvm_builder.ret(value)
 
+    # 进入下一个作用域
     def push(self):
         self.var_manager.push()
 
+    # 推出当前作用域
     def pop(self):
         self.var_manager.pop()
 

@@ -51,3 +51,12 @@ class GenVisitor(RiddleParserVisitor):
     def visitTypeName(self, ctx: RiddleParser.TypeNameContext) -> ir.Type:
         name = ctx.getText()
         return self.builder.getType(name)
+
+    def visitInteger(self, ctx: RiddleParser.IntegerContext) -> int:
+        return ctx.value
+
+    def visitFloat(self, ctx: RiddleParser.FloatContext) -> float:
+        return ctx.value
+
+    def visitBoolean(self, ctx: RiddleParser.BooleanContext) -> bool:
+        return ctx.value

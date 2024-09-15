@@ -58,7 +58,7 @@ defineArgs
     ;
 
 funcDefine
-    : Func funcName=Identifier LeftBracket args=defineArgs RightBracket (Colon returnType=typeName)? LeftCurly body=funcBody RightCurly
+    : Func funcName=Identifier LeftBracket args=defineArgs RightBracket (Sub Greater returnType=typeName)? LeftCurly body=funcBody RightCurly
     ;
 
 funcBody

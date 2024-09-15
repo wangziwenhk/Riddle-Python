@@ -19,14 +19,15 @@ class Builder:
     def get_context(self) -> ir.Context:
         return self.context
 
-    def create_function(self, name: str, return_type: ir.types, args=None):
+    def create_function(self, name: str, return_type: ir.types = ir.VoidType(), args: dict[str:str] = None):
         if args is None:
             args = []
 
-        # Create
+        # 创建函数
         func_type = ir.FunctionType(return_type, args)
         function = ir.Function(self.module, func_type, name)
 
+        # 进入函数代码块
         block = function.append_basic_block('entry')
         self.llvm_builder = ir.IRBuilder(block)
 
@@ -40,21 +41,25 @@ class Builder:
             raise RuntimeError('Cannot create statement outside the allowed scope')
         return self.llvm_builder.sub(x, y)
 
+    # 创建一个乘法
     def create_mul(self, x: ir.Value, y: ir.Value) -> ir.Value:
         if self.llvm_builder is None:
             raise RuntimeError('Cannot create statement outside the allowed scope')
         return self.llvm_builder.mul(x, y)
 
+    # 创建一个赋值指令
     def create_store(self, value: ir.Value, ptr: ir.Value) -> ir.Value:
         if self.llvm_builder is None:
             raise RuntimeError('Cannot create statement outside the allowed scope')
         return self.llvm_builder.store(value, ptr)
 
+    # 创建一个 load 指令
     def create_load(self, ptr: ir.Value, name: ir.Value) -> ir.Value:
         if self.llvm_builder is None:
             raise RuntimeError('Cannot create statement outside the allowed scope')
         return self.llvm_builder.load(ptr, name)
 
+    # 创建一个局部变量
     def create_allocate(self, typ: ir.Type, name: str = '') -> ir.Value:
         if self.llvm_builder is None:
             raise RuntimeError('Cannot create statement outside the allowed scope')
@@ -79,6 +84,7 @@ class Builder:
         global_var.global_constant = is_const
         return global_var
 
+    # 创建一个返回语句
     def create_return(self, value: ir.Value = None) -> ir.Value:
         if self.llvm_builder is None:
             raise RuntimeError('Cannot create statement outside the allowed scope')

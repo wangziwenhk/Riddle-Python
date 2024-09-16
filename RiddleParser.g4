@@ -79,7 +79,7 @@ ifStatement returns [bool hasElse]
     ;
 
 returnStatement
-    : Return result=statement_ed
+    : Return (result=statement_ed)?
     ;
 
 classDefine

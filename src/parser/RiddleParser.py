@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,63,476,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,63,477,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
@@ -25,40 +25,40 @@ def serializedATN():
         9,9,1,10,1,10,1,10,3,10,169,8,10,1,10,1,10,3,10,173,8,10,1,10,1,
         10,3,10,177,8,10,1,10,1,10,1,10,1,11,1,11,1,11,1,11,1,11,1,11,1,
         12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,
-        12,1,12,1,12,3,12,204,8,12,1,13,1,13,1,13,1,14,1,14,1,14,1,14,1,
-        14,1,14,1,15,5,15,216,8,15,10,15,12,15,219,9,15,1,16,1,16,1,16,1,
-        16,1,16,1,16,1,16,3,16,228,8,16,1,16,1,16,1,16,5,16,233,8,16,10,
-        16,12,16,236,9,16,1,17,1,17,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,3,18,340,8,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
-        18,1,18,5,18,404,8,18,10,18,12,18,407,9,18,1,19,1,19,1,19,5,19,412,
-        8,19,10,19,12,19,415,9,19,1,20,1,20,3,20,419,8,20,1,21,1,21,1,21,
-        1,21,3,21,425,8,21,1,22,1,22,1,23,1,23,1,23,1,24,1,24,1,24,1,24,
-        1,24,1,24,1,24,1,24,3,24,440,8,24,1,25,1,25,3,25,444,8,25,1,26,1,
-        26,1,26,5,26,449,8,26,10,26,12,26,452,9,26,1,26,3,26,455,8,26,1,
-        27,1,27,1,27,1,27,1,27,1,27,1,27,3,27,464,8,27,1,27,1,27,1,27,1,
-        27,1,27,5,27,471,8,27,10,27,12,27,474,9,27,1,27,0,3,32,36,54,28,
-        0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,
-        46,48,50,52,54,0,0,534,0,63,1,0,0,0,2,74,1,0,0,0,4,94,1,0,0,0,6,
-        96,1,0,0,0,8,99,1,0,0,0,10,117,1,0,0,0,12,128,1,0,0,0,14,143,1,0,
-        0,0,16,145,1,0,0,0,18,162,1,0,0,0,20,165,1,0,0,0,22,181,1,0,0,0,
-        24,203,1,0,0,0,26,205,1,0,0,0,28,208,1,0,0,0,30,217,1,0,0,0,32,227,
-        1,0,0,0,34,237,1,0,0,0,36,339,1,0,0,0,38,408,1,0,0,0,40,418,1,0,
-        0,0,42,424,1,0,0,0,44,426,1,0,0,0,46,428,1,0,0,0,48,439,1,0,0,0,
-        50,443,1,0,0,0,52,454,1,0,0,0,54,463,1,0,0,0,56,58,3,2,1,0,57,56,
-        1,0,0,0,58,61,1,0,0,0,59,57,1,0,0,0,59,60,1,0,0,0,60,64,1,0,0,0,
-        61,59,1,0,0,0,62,64,5,0,0,1,63,59,1,0,0,0,63,62,1,0,0,0,64,1,1,0,
-        0,0,65,67,3,4,2,0,66,68,5,27,0,0,67,66,1,0,0,0,67,68,1,0,0,0,68,
+        12,1,12,1,12,3,12,204,8,12,1,13,1,13,3,13,208,8,13,1,14,1,14,1,14,
+        1,14,1,14,1,14,1,15,5,15,217,8,15,10,15,12,15,220,9,15,1,16,1,16,
+        1,16,1,16,1,16,1,16,1,16,3,16,229,8,16,1,16,1,16,1,16,5,16,234,8,
+        16,10,16,12,16,237,9,16,1,17,1,17,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,3,18,341,8,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,
+        1,18,1,18,1,18,5,18,405,8,18,10,18,12,18,408,9,18,1,19,1,19,1,19,
+        5,19,413,8,19,10,19,12,19,416,9,19,1,20,1,20,3,20,420,8,20,1,21,
+        1,21,1,21,1,21,3,21,426,8,21,1,22,1,22,1,23,1,23,1,23,1,24,1,24,
+        1,24,1,24,1,24,1,24,1,24,1,24,3,24,441,8,24,1,25,1,25,3,25,445,8,
+        25,1,26,1,26,1,26,5,26,450,8,26,10,26,12,26,453,9,26,1,26,3,26,456,
+        8,26,1,27,1,27,1,27,1,27,1,27,1,27,1,27,3,27,465,8,27,1,27,1,27,
+        1,27,1,27,1,27,5,27,472,8,27,10,27,12,27,475,9,27,1,27,0,3,32,36,
+        54,28,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,
+        42,44,46,48,50,52,54,0,0,536,0,63,1,0,0,0,2,74,1,0,0,0,4,94,1,0,
+        0,0,6,96,1,0,0,0,8,99,1,0,0,0,10,117,1,0,0,0,12,128,1,0,0,0,14,143,
+        1,0,0,0,16,145,1,0,0,0,18,162,1,0,0,0,20,165,1,0,0,0,22,181,1,0,
+        0,0,24,203,1,0,0,0,26,205,1,0,0,0,28,209,1,0,0,0,30,218,1,0,0,0,
+        32,228,1,0,0,0,34,238,1,0,0,0,36,340,1,0,0,0,38,409,1,0,0,0,40,419,
+        1,0,0,0,42,425,1,0,0,0,44,427,1,0,0,0,46,429,1,0,0,0,48,440,1,0,
+        0,0,50,444,1,0,0,0,52,455,1,0,0,0,54,464,1,0,0,0,56,58,3,2,1,0,57,
+        56,1,0,0,0,58,61,1,0,0,0,59,57,1,0,0,0,59,60,1,0,0,0,60,64,1,0,0,
+        0,61,59,1,0,0,0,62,64,5,0,0,1,63,59,1,0,0,0,63,62,1,0,0,0,64,1,1,
+        0,0,0,65,67,3,4,2,0,66,68,5,27,0,0,67,66,1,0,0,0,67,68,1,0,0,0,68,
         70,1,0,0,0,69,71,5,48,0,0,70,69,1,0,0,0,70,71,1,0,0,0,71,75,1,0,
         0,0,72,75,5,27,0,0,73,75,5,48,0,0,74,65,1,0,0,0,74,72,1,0,0,0,74,
         73,1,0,0,0,75,3,1,0,0,0,76,95,3,6,3,0,77,95,3,8,4,0,78,95,3,28,14,
@@ -98,95 +98,95 @@ def serializedATN():
         5,21,0,0,191,192,3,2,1,0,192,193,6,12,-1,0,193,204,1,0,0,0,194,195,
         5,5,0,0,195,196,5,20,0,0,196,197,3,36,18,0,197,198,5,21,0,0,198,
         199,3,2,1,0,199,200,5,6,0,0,200,201,3,2,1,0,201,202,6,12,-1,0,202,
-        204,1,0,0,0,203,187,1,0,0,0,203,194,1,0,0,0,204,25,1,0,0,0,205,206,
-        5,8,0,0,206,207,3,2,1,0,207,27,1,0,0,0,208,209,5,11,0,0,209,210,
-        3,38,19,0,210,211,5,24,0,0,211,212,3,30,15,0,212,213,5,25,0,0,213,
-        29,1,0,0,0,214,216,3,2,1,0,215,214,1,0,0,0,216,219,1,0,0,0,217,215,
-        1,0,0,0,217,218,1,0,0,0,218,31,1,0,0,0,219,217,1,0,0,0,220,221,6,
-        16,-1,0,221,222,5,49,0,0,222,223,5,20,0,0,223,224,3,12,6,0,224,225,
-        5,21,0,0,225,228,1,0,0,0,226,228,5,49,0,0,227,220,1,0,0,0,227,226,
-        1,0,0,0,228,234,1,0,0,0,229,230,10,1,0,0,230,231,5,45,0,0,231,233,
-        3,32,16,2,232,229,1,0,0,0,233,236,1,0,0,0,234,232,1,0,0,0,234,235,
-        1,0,0,0,235,33,1,0,0,0,236,234,1,0,0,0,237,238,3,32,16,0,238,35,
-        1,0,0,0,239,240,6,18,-1,0,240,241,5,32,0,0,241,242,3,54,27,0,242,
-        243,5,31,0,0,243,244,5,20,0,0,244,245,3,34,17,0,245,246,5,21,0,0,
-        246,340,1,0,0,0,247,248,5,20,0,0,248,249,3,36,18,0,249,250,5,21,
-        0,0,250,340,1,0,0,0,251,252,5,41,0,0,252,340,3,36,18,43,253,254,
-        5,36,0,0,254,340,3,36,18,42,255,256,5,37,0,0,256,340,3,36,18,41,
-        257,258,5,36,0,0,258,259,5,36,0,0,259,340,3,34,17,0,260,261,3,34,
-        17,0,261,262,5,36,0,0,262,263,5,36,0,0,263,340,1,0,0,0,264,265,5,
-        37,0,0,265,266,5,37,0,0,266,340,3,34,17,0,267,268,3,34,17,0,268,
-        269,5,37,0,0,269,270,5,37,0,0,270,340,1,0,0,0,271,340,3,32,16,0,
-        272,273,3,34,17,0,273,274,5,30,0,0,274,275,3,36,18,16,275,340,1,
-        0,0,0,276,277,3,34,17,0,277,278,5,36,0,0,278,279,5,30,0,0,279,280,
-        3,36,18,15,280,340,1,0,0,0,281,282,3,34,17,0,282,283,5,37,0,0,283,
-        284,5,30,0,0,284,285,3,36,18,14,285,340,1,0,0,0,286,287,3,34,17,
-        0,287,288,5,38,0,0,288,289,5,30,0,0,289,290,3,36,18,13,290,340,1,
-        0,0,0,291,292,3,34,17,0,292,293,5,39,0,0,293,294,5,30,0,0,294,295,
-        3,36,18,12,295,340,1,0,0,0,296,297,3,34,17,0,297,298,5,40,0,0,298,
-        299,5,30,0,0,299,300,3,36,18,11,300,340,1,0,0,0,301,302,3,34,17,
-        0,302,303,5,36,0,0,303,304,5,30,0,0,304,305,3,36,18,10,305,340,1,
-        0,0,0,306,307,3,34,17,0,307,308,5,42,0,0,308,309,5,30,0,0,309,310,
-        3,36,18,9,310,340,1,0,0,0,311,312,3,34,17,0,312,313,5,43,0,0,313,
-        314,5,30,0,0,314,315,3,36,18,8,315,340,1,0,0,0,316,317,3,34,17,0,
-        317,318,5,44,0,0,318,319,5,30,0,0,319,320,3,36,18,7,320,340,1,0,
-        0,0,321,322,3,34,17,0,322,323,5,33,0,0,323,324,5,30,0,0,324,325,
-        3,36,18,6,325,340,1,0,0,0,326,327,3,34,17,0,327,328,5,34,0,0,328,
-        329,5,30,0,0,329,330,3,36,18,5,330,340,1,0,0,0,331,332,3,34,17,0,
-        332,333,5,35,0,0,333,334,5,30,0,0,334,335,3,36,18,4,335,340,1,0,
-        0,0,336,340,3,44,22,0,337,340,3,40,20,0,338,340,3,42,21,0,339,239,
-        1,0,0,0,339,247,1,0,0,0,339,251,1,0,0,0,339,253,1,0,0,0,339,255,
-        1,0,0,0,339,257,1,0,0,0,339,260,1,0,0,0,339,264,1,0,0,0,339,267,
-        1,0,0,0,339,271,1,0,0,0,339,272,1,0,0,0,339,276,1,0,0,0,339,281,
-        1,0,0,0,339,286,1,0,0,0,339,291,1,0,0,0,339,296,1,0,0,0,339,301,
-        1,0,0,0,339,306,1,0,0,0,339,311,1,0,0,0,339,316,1,0,0,0,339,321,
-        1,0,0,0,339,326,1,0,0,0,339,331,1,0,0,0,339,336,1,0,0,0,339,337,
-        1,0,0,0,339,338,1,0,0,0,340,405,1,0,0,0,341,342,10,35,0,0,342,343,
-        5,38,0,0,343,404,3,36,18,36,344,345,10,34,0,0,345,346,5,39,0,0,346,
-        404,3,36,18,35,347,348,10,33,0,0,348,349,5,40,0,0,349,404,3,36,18,
-        34,350,351,10,32,0,0,351,352,5,36,0,0,352,404,3,36,18,33,353,354,
-        10,31,0,0,354,355,5,37,0,0,355,404,3,36,18,32,356,357,10,30,0,0,
-        357,358,5,33,0,0,358,404,3,36,18,31,359,360,10,29,0,0,360,361,5,
-        34,0,0,361,404,3,36,18,30,362,363,10,28,0,0,363,364,5,35,0,0,364,
-        404,3,36,18,29,365,366,10,27,0,0,366,367,5,31,0,0,367,404,3,36,18,
-        28,368,369,10,26,0,0,369,370,5,32,0,0,370,404,3,36,18,27,371,372,
-        10,25,0,0,372,373,5,31,0,0,373,374,5,30,0,0,374,404,3,36,18,26,375,
-        376,10,24,0,0,376,377,5,32,0,0,377,378,5,30,0,0,378,404,3,36,18,
-        25,379,380,10,23,0,0,380,381,5,29,0,0,381,404,3,36,18,24,382,383,
-        10,22,0,0,383,384,5,41,0,0,384,385,5,30,0,0,385,404,3,36,18,23,386,
-        387,10,21,0,0,387,388,5,42,0,0,388,404,3,36,18,22,389,390,10,20,
-        0,0,390,391,5,44,0,0,391,404,3,36,18,21,392,393,10,19,0,0,393,394,
-        5,43,0,0,394,404,3,36,18,20,395,396,10,18,0,0,396,397,5,42,0,0,397,
-        398,5,42,0,0,398,404,3,36,18,19,399,400,10,17,0,0,400,401,5,43,0,
-        0,401,402,5,43,0,0,402,404,3,36,18,18,403,341,1,0,0,0,403,344,1,
-        0,0,0,403,347,1,0,0,0,403,350,1,0,0,0,403,353,1,0,0,0,403,356,1,
-        0,0,0,403,359,1,0,0,0,403,362,1,0,0,0,403,365,1,0,0,0,403,368,1,
-        0,0,0,403,371,1,0,0,0,403,375,1,0,0,0,403,379,1,0,0,0,403,382,1,
-        0,0,0,403,386,1,0,0,0,403,389,1,0,0,0,403,392,1,0,0,0,403,395,1,
-        0,0,0,403,399,1,0,0,0,404,407,1,0,0,0,405,403,1,0,0,0,405,406,1,
-        0,0,0,406,37,1,0,0,0,407,405,1,0,0,0,408,413,5,49,0,0,409,410,5,
-        45,0,0,410,412,5,49,0,0,411,409,1,0,0,0,412,415,1,0,0,0,413,411,
-        1,0,0,0,413,414,1,0,0,0,414,39,1,0,0,0,415,413,1,0,0,0,416,419,3,
-        48,24,0,417,419,3,46,23,0,418,416,1,0,0,0,418,417,1,0,0,0,419,41,
-        1,0,0,0,420,421,5,16,0,0,421,425,6,21,-1,0,422,423,5,17,0,0,423,
-        425,6,21,-1,0,424,420,1,0,0,0,424,422,1,0,0,0,425,43,1,0,0,0,426,
-        427,5,60,0,0,427,45,1,0,0,0,428,429,5,54,0,0,429,430,6,23,-1,0,430,
-        47,1,0,0,0,431,432,5,51,0,0,432,440,6,24,-1,0,433,434,5,50,0,0,434,
-        440,6,24,-1,0,435,436,5,53,0,0,436,440,6,24,-1,0,437,438,5,52,0,
-        0,438,440,6,24,-1,0,439,431,1,0,0,0,439,433,1,0,0,0,439,435,1,0,
-        0,0,439,437,1,0,0,0,440,49,1,0,0,0,441,444,3,36,18,0,442,444,3,54,
-        27,0,443,441,1,0,0,0,443,442,1,0,0,0,444,51,1,0,0,0,445,446,3,50,
-        25,0,446,447,5,28,0,0,447,449,1,0,0,0,448,445,1,0,0,0,449,452,1,
-        0,0,0,450,448,1,0,0,0,450,451,1,0,0,0,451,453,1,0,0,0,452,450,1,
-        0,0,0,453,455,3,50,25,0,454,450,1,0,0,0,454,455,1,0,0,0,455,53,1,
-        0,0,0,456,457,6,27,-1,0,457,464,3,38,19,0,458,459,3,38,19,0,459,
-        460,5,32,0,0,460,461,3,52,26,0,461,462,5,31,0,0,462,464,1,0,0,0,
-        463,456,1,0,0,0,463,458,1,0,0,0,464,472,1,0,0,0,465,466,10,1,0,0,
-        466,467,5,22,0,0,467,468,3,36,18,0,468,469,5,23,0,0,469,471,1,0,
-        0,0,470,465,1,0,0,0,471,474,1,0,0,0,472,470,1,0,0,0,472,473,1,0,
-        0,0,473,55,1,0,0,0,474,472,1,0,0,0,33,59,63,67,70,74,90,94,117,124,
-        128,137,143,153,162,168,172,176,203,217,227,234,339,403,405,413,
-        418,424,439,443,450,454,463,472
+        204,1,0,0,0,203,187,1,0,0,0,203,194,1,0,0,0,204,25,1,0,0,0,205,207,
+        5,8,0,0,206,208,3,2,1,0,207,206,1,0,0,0,207,208,1,0,0,0,208,27,1,
+        0,0,0,209,210,5,11,0,0,210,211,3,38,19,0,211,212,5,24,0,0,212,213,
+        3,30,15,0,213,214,5,25,0,0,214,29,1,0,0,0,215,217,3,2,1,0,216,215,
+        1,0,0,0,217,220,1,0,0,0,218,216,1,0,0,0,218,219,1,0,0,0,219,31,1,
+        0,0,0,220,218,1,0,0,0,221,222,6,16,-1,0,222,223,5,49,0,0,223,224,
+        5,20,0,0,224,225,3,12,6,0,225,226,5,21,0,0,226,229,1,0,0,0,227,229,
+        5,49,0,0,228,221,1,0,0,0,228,227,1,0,0,0,229,235,1,0,0,0,230,231,
+        10,1,0,0,231,232,5,45,0,0,232,234,3,32,16,2,233,230,1,0,0,0,234,
+        237,1,0,0,0,235,233,1,0,0,0,235,236,1,0,0,0,236,33,1,0,0,0,237,235,
+        1,0,0,0,238,239,3,32,16,0,239,35,1,0,0,0,240,241,6,18,-1,0,241,242,
+        5,32,0,0,242,243,3,54,27,0,243,244,5,31,0,0,244,245,5,20,0,0,245,
+        246,3,34,17,0,246,247,5,21,0,0,247,341,1,0,0,0,248,249,5,20,0,0,
+        249,250,3,36,18,0,250,251,5,21,0,0,251,341,1,0,0,0,252,253,5,41,
+        0,0,253,341,3,36,18,43,254,255,5,36,0,0,255,341,3,36,18,42,256,257,
+        5,37,0,0,257,341,3,36,18,41,258,259,5,36,0,0,259,260,5,36,0,0,260,
+        341,3,34,17,0,261,262,3,34,17,0,262,263,5,36,0,0,263,264,5,36,0,
+        0,264,341,1,0,0,0,265,266,5,37,0,0,266,267,5,37,0,0,267,341,3,34,
+        17,0,268,269,3,34,17,0,269,270,5,37,0,0,270,271,5,37,0,0,271,341,
+        1,0,0,0,272,341,3,32,16,0,273,274,3,34,17,0,274,275,5,30,0,0,275,
+        276,3,36,18,16,276,341,1,0,0,0,277,278,3,34,17,0,278,279,5,36,0,
+        0,279,280,5,30,0,0,280,281,3,36,18,15,281,341,1,0,0,0,282,283,3,
+        34,17,0,283,284,5,37,0,0,284,285,5,30,0,0,285,286,3,36,18,14,286,
+        341,1,0,0,0,287,288,3,34,17,0,288,289,5,38,0,0,289,290,5,30,0,0,
+        290,291,3,36,18,13,291,341,1,0,0,0,292,293,3,34,17,0,293,294,5,39,
+        0,0,294,295,5,30,0,0,295,296,3,36,18,12,296,341,1,0,0,0,297,298,
+        3,34,17,0,298,299,5,40,0,0,299,300,5,30,0,0,300,301,3,36,18,11,301,
+        341,1,0,0,0,302,303,3,34,17,0,303,304,5,36,0,0,304,305,5,30,0,0,
+        305,306,3,36,18,10,306,341,1,0,0,0,307,308,3,34,17,0,308,309,5,42,
+        0,0,309,310,5,30,0,0,310,311,3,36,18,9,311,341,1,0,0,0,312,313,3,
+        34,17,0,313,314,5,43,0,0,314,315,5,30,0,0,315,316,3,36,18,8,316,
+        341,1,0,0,0,317,318,3,34,17,0,318,319,5,44,0,0,319,320,5,30,0,0,
+        320,321,3,36,18,7,321,341,1,0,0,0,322,323,3,34,17,0,323,324,5,33,
+        0,0,324,325,5,30,0,0,325,326,3,36,18,6,326,341,1,0,0,0,327,328,3,
+        34,17,0,328,329,5,34,0,0,329,330,5,30,0,0,330,331,3,36,18,5,331,
+        341,1,0,0,0,332,333,3,34,17,0,333,334,5,35,0,0,334,335,5,30,0,0,
+        335,336,3,36,18,4,336,341,1,0,0,0,337,341,3,44,22,0,338,341,3,40,
+        20,0,339,341,3,42,21,0,340,240,1,0,0,0,340,248,1,0,0,0,340,252,1,
+        0,0,0,340,254,1,0,0,0,340,256,1,0,0,0,340,258,1,0,0,0,340,261,1,
+        0,0,0,340,265,1,0,0,0,340,268,1,0,0,0,340,272,1,0,0,0,340,273,1,
+        0,0,0,340,277,1,0,0,0,340,282,1,0,0,0,340,287,1,0,0,0,340,292,1,
+        0,0,0,340,297,1,0,0,0,340,302,1,0,0,0,340,307,1,0,0,0,340,312,1,
+        0,0,0,340,317,1,0,0,0,340,322,1,0,0,0,340,327,1,0,0,0,340,332,1,
+        0,0,0,340,337,1,0,0,0,340,338,1,0,0,0,340,339,1,0,0,0,341,406,1,
+        0,0,0,342,343,10,35,0,0,343,344,5,38,0,0,344,405,3,36,18,36,345,
+        346,10,34,0,0,346,347,5,39,0,0,347,405,3,36,18,35,348,349,10,33,
+        0,0,349,350,5,40,0,0,350,405,3,36,18,34,351,352,10,32,0,0,352,353,
+        5,36,0,0,353,405,3,36,18,33,354,355,10,31,0,0,355,356,5,37,0,0,356,
+        405,3,36,18,32,357,358,10,30,0,0,358,359,5,33,0,0,359,405,3,36,18,
+        31,360,361,10,29,0,0,361,362,5,34,0,0,362,405,3,36,18,30,363,364,
+        10,28,0,0,364,365,5,35,0,0,365,405,3,36,18,29,366,367,10,27,0,0,
+        367,368,5,31,0,0,368,405,3,36,18,28,369,370,10,26,0,0,370,371,5,
+        32,0,0,371,405,3,36,18,27,372,373,10,25,0,0,373,374,5,31,0,0,374,
+        375,5,30,0,0,375,405,3,36,18,26,376,377,10,24,0,0,377,378,5,32,0,
+        0,378,379,5,30,0,0,379,405,3,36,18,25,380,381,10,23,0,0,381,382,
+        5,29,0,0,382,405,3,36,18,24,383,384,10,22,0,0,384,385,5,41,0,0,385,
+        386,5,30,0,0,386,405,3,36,18,23,387,388,10,21,0,0,388,389,5,42,0,
+        0,389,405,3,36,18,22,390,391,10,20,0,0,391,392,5,44,0,0,392,405,
+        3,36,18,21,393,394,10,19,0,0,394,395,5,43,0,0,395,405,3,36,18,20,
+        396,397,10,18,0,0,397,398,5,42,0,0,398,399,5,42,0,0,399,405,3,36,
+        18,19,400,401,10,17,0,0,401,402,5,43,0,0,402,403,5,43,0,0,403,405,
+        3,36,18,18,404,342,1,0,0,0,404,345,1,0,0,0,404,348,1,0,0,0,404,351,
+        1,0,0,0,404,354,1,0,0,0,404,357,1,0,0,0,404,360,1,0,0,0,404,363,
+        1,0,0,0,404,366,1,0,0,0,404,369,1,0,0,0,404,372,1,0,0,0,404,376,
+        1,0,0,0,404,380,1,0,0,0,404,383,1,0,0,0,404,387,1,0,0,0,404,390,
+        1,0,0,0,404,393,1,0,0,0,404,396,1,0,0,0,404,400,1,0,0,0,405,408,
+        1,0,0,0,406,404,1,0,0,0,406,407,1,0,0,0,407,37,1,0,0,0,408,406,1,
+        0,0,0,409,414,5,49,0,0,410,411,5,45,0,0,411,413,5,49,0,0,412,410,
+        1,0,0,0,413,416,1,0,0,0,414,412,1,0,0,0,414,415,1,0,0,0,415,39,1,
+        0,0,0,416,414,1,0,0,0,417,420,3,48,24,0,418,420,3,46,23,0,419,417,
+        1,0,0,0,419,418,1,0,0,0,420,41,1,0,0,0,421,422,5,16,0,0,422,426,
+        6,21,-1,0,423,424,5,17,0,0,424,426,6,21,-1,0,425,421,1,0,0,0,425,
+        423,1,0,0,0,426,43,1,0,0,0,427,428,5,60,0,0,428,45,1,0,0,0,429,430,
+        5,54,0,0,430,431,6,23,-1,0,431,47,1,0,0,0,432,433,5,51,0,0,433,441,
+        6,24,-1,0,434,435,5,50,0,0,435,441,6,24,-1,0,436,437,5,53,0,0,437,
+        441,6,24,-1,0,438,439,5,52,0,0,439,441,6,24,-1,0,440,432,1,0,0,0,
+        440,434,1,0,0,0,440,436,1,0,0,0,440,438,1,0,0,0,441,49,1,0,0,0,442,
+        445,3,36,18,0,443,445,3,54,27,0,444,442,1,0,0,0,444,443,1,0,0,0,
+        445,51,1,0,0,0,446,447,3,50,25,0,447,448,5,28,0,0,448,450,1,0,0,
+        0,449,446,1,0,0,0,450,453,1,0,0,0,451,449,1,0,0,0,451,452,1,0,0,
+        0,452,454,1,0,0,0,453,451,1,0,0,0,454,456,3,50,25,0,455,451,1,0,
+        0,0,455,456,1,0,0,0,456,53,1,0,0,0,457,458,6,27,-1,0,458,465,3,38,
+        19,0,459,460,3,38,19,0,460,461,5,32,0,0,461,462,3,52,26,0,462,463,
+        5,31,0,0,463,465,1,0,0,0,464,457,1,0,0,0,464,459,1,0,0,0,465,473,
+        1,0,0,0,466,467,10,1,0,0,467,468,5,22,0,0,468,469,3,36,18,0,469,
+        470,5,23,0,0,470,472,1,0,0,0,471,466,1,0,0,0,472,475,1,0,0,0,473,
+        471,1,0,0,0,473,474,1,0,0,0,474,55,1,0,0,0,475,473,1,0,0,0,34,59,
+        63,67,70,74,90,94,117,124,128,137,143,153,162,168,172,176,203,207,
+        218,228,235,340,404,406,414,419,425,440,444,451,455,464,473
     ]
 
 class RiddleParser ( Parser ):
@@ -1560,8 +1560,14 @@ class RiddleParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 205
             self.match(RiddleParser.Return)
-            self.state = 206
-            localctx.result = self.statement_ed()
+            self.state = 207
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,18,self._ctx)
+            if la_ == 1:
+                self.state = 206
+                localctx.result = self.statement_ed()
+
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1623,15 +1629,15 @@ class RiddleParser ( Parser ):
         self.enterRule(localctx, 28, self.RULE_classDefine)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 208
-            self.match(RiddleParser.Class)
             self.state = 209
-            localctx.className = self.id_()
+            self.match(RiddleParser.Class)
             self.state = 210
-            self.match(RiddleParser.LeftCurly)
+            localctx.className = self.id_()
             self.state = 211
-            localctx.body = self.classBody()
+            self.match(RiddleParser.LeftCurly)
             self.state = 212
+            localctx.body = self.classBody()
+            self.state = 213
             self.match(RiddleParser.RightCurly)
         except RecognitionException as re:
             localctx.exception = re
@@ -1683,13 +1689,13 @@ class RiddleParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 217
+            self.state = 218
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1188671236277997498) != 0):
-                self.state = 214
+                self.state = 215
                 self.statement_ed()
-                self.state = 219
+                self.state = 220
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1817,21 +1823,21 @@ class RiddleParser ( Parser ):
         self.enterRecursionRule(localctx, 32, self.RULE_exprPtr, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 227
+            self.state = 228
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,19,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,20,self._ctx)
             if la_ == 1:
                 localctx = RiddleParser.FuncExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 221
-                localctx.funcName = self.match(RiddleParser.Identifier)
                 self.state = 222
-                self.match(RiddleParser.LeftBracket)
+                localctx.funcName = self.match(RiddleParser.Identifier)
                 self.state = 223
-                localctx.args = self.argsExpr()
+                self.match(RiddleParser.LeftBracket)
                 self.state = 224
+                localctx.args = self.argsExpr()
+                self.state = 225
                 self.match(RiddleParser.RightBracket)
                 pass
 
@@ -1839,15 +1845,15 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.ObjectExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 226
+                self.state = 227
                 self.match(RiddleParser.Identifier)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 234
+            self.state = 235
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,20,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,21,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -1856,17 +1862,17 @@ class RiddleParser ( Parser ):
                     localctx = RiddleParser.BlendExprContext(self, RiddleParser.ExprPtrContext(self, _parentctx, _parentState))
                     localctx.parent = _prevctx
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_exprPtr)
-                    self.state = 229
+                    self.state = 230
                     if not self.precpred(self._ctx, 1):
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 1)")
-                    self.state = 230
-                    self.match(RiddleParser.Dot)
                     self.state = 231
+                    self.match(RiddleParser.Dot)
+                    self.state = 232
                     localctx.child = self.exprPtr(2) 
-                self.state = 236
+                self.state = 237
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,20,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,21,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1914,7 +1920,7 @@ class RiddleParser ( Parser ):
         self.enterRule(localctx, 34, self.RULE_exprPtrParser)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 237
+            self.state = 238
             self.exprPtr(0)
         except RecognitionException as re:
             localctx.exception = re
@@ -3353,25 +3359,25 @@ class RiddleParser ( Parser ):
         self.enterRecursionRule(localctx, 36, self.RULE_expression, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 339
+            self.state = 340
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,21,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
             if la_ == 1:
                 localctx = RiddleParser.CastExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 240
-                self.match(RiddleParser.Less)
                 self.state = 241
-                localctx.type_ = self.typeName(0)
+                self.match(RiddleParser.Less)
                 self.state = 242
-                self.match(RiddleParser.Greater)
+                localctx.type_ = self.typeName(0)
                 self.state = 243
-                self.match(RiddleParser.LeftBracket)
+                self.match(RiddleParser.Greater)
                 self.state = 244
-                localctx.value = self.exprPtrParser()
+                self.match(RiddleParser.LeftBracket)
                 self.state = 245
+                localctx.value = self.exprPtrParser()
+                self.state = 246
                 self.match(RiddleParser.RightBracket)
                 pass
 
@@ -3379,11 +3385,11 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.BracketExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 247
-                self.match(RiddleParser.LeftBracket)
                 self.state = 248
-                localctx.expr = self.expression(0)
+                self.match(RiddleParser.LeftBracket)
                 self.state = 249
+                localctx.expr = self.expression(0)
+                self.state = 250
                 self.match(RiddleParser.RightBracket)
                 pass
 
@@ -3391,9 +3397,9 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.NotExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 251
-                self.match(RiddleParser.Not)
                 self.state = 252
+                self.match(RiddleParser.Not)
+                self.state = 253
                 localctx.expr = self.expression(43)
                 pass
 
@@ -3401,9 +3407,9 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.PositiveExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 253
-                self.match(RiddleParser.Add)
                 self.state = 254
+                self.match(RiddleParser.Add)
+                self.state = 255
                 localctx.expr = self.expression(42)
                 pass
 
@@ -3411,9 +3417,9 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.NegativeExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 255
-                self.match(RiddleParser.Sub)
                 self.state = 256
+                self.match(RiddleParser.Sub)
+                self.state = 257
                 localctx.expr = self.expression(41)
                 pass
 
@@ -3421,11 +3427,11 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.SelfAddLeftExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 257
-                self.match(RiddleParser.Add)
                 self.state = 258
                 self.match(RiddleParser.Add)
                 self.state = 259
+                self.match(RiddleParser.Add)
+                self.state = 260
                 localctx.expr = self.exprPtrParser()
                 pass
 
@@ -3433,11 +3439,11 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.SelfAddRightExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 260
-                localctx.expr = self.exprPtrParser()
                 self.state = 261
-                self.match(RiddleParser.Add)
+                localctx.expr = self.exprPtrParser()
                 self.state = 262
+                self.match(RiddleParser.Add)
+                self.state = 263
                 self.match(RiddleParser.Add)
                 pass
 
@@ -3445,11 +3451,11 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.SelfSubLeftExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 264
-                self.match(RiddleParser.Sub)
                 self.state = 265
                 self.match(RiddleParser.Sub)
                 self.state = 266
+                self.match(RiddleParser.Sub)
+                self.state = 267
                 localctx.expr = self.exprPtrParser()
                 pass
 
@@ -3457,11 +3463,11 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.SelfSubRightExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 267
-                localctx.expr = self.exprPtrParser()
                 self.state = 268
-                self.match(RiddleParser.Sub)
+                localctx.expr = self.exprPtrParser()
                 self.state = 269
+                self.match(RiddleParser.Sub)
+                self.state = 270
                 self.match(RiddleParser.Sub)
                 pass
 
@@ -3469,7 +3475,7 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.PtrExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 271
+                self.state = 272
                 self.exprPtr(0)
                 pass
 
@@ -3477,11 +3483,11 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.AssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 272
-                localctx.left = self.exprPtrParser()
                 self.state = 273
-                self.match(RiddleParser.Assign)
+                localctx.left = self.exprPtrParser()
                 self.state = 274
+                self.match(RiddleParser.Assign)
+                self.state = 275
                 localctx.right = self.expression(16)
                 pass
 
@@ -3489,13 +3495,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.AddAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 276
-                localctx.left = self.exprPtrParser()
                 self.state = 277
-                self.match(RiddleParser.Add)
+                localctx.left = self.exprPtrParser()
                 self.state = 278
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Add)
                 self.state = 279
+                self.match(RiddleParser.Assign)
+                self.state = 280
                 localctx.right = self.expression(15)
                 pass
 
@@ -3503,13 +3509,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.SubAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 281
-                localctx.left = self.exprPtrParser()
                 self.state = 282
-                self.match(RiddleParser.Sub)
+                localctx.left = self.exprPtrParser()
                 self.state = 283
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Sub)
                 self.state = 284
+                self.match(RiddleParser.Assign)
+                self.state = 285
                 localctx.right = self.expression(14)
                 pass
 
@@ -3517,13 +3523,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.MulAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 286
-                localctx.left = self.exprPtrParser()
                 self.state = 287
-                self.match(RiddleParser.Star)
+                localctx.left = self.exprPtrParser()
                 self.state = 288
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Star)
                 self.state = 289
+                self.match(RiddleParser.Assign)
+                self.state = 290
                 localctx.right = self.expression(13)
                 pass
 
@@ -3531,13 +3537,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.DivAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 291
-                localctx.left = self.exprPtrParser()
                 self.state = 292
-                self.match(RiddleParser.Div)
+                localctx.left = self.exprPtrParser()
                 self.state = 293
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Div)
                 self.state = 294
+                self.match(RiddleParser.Assign)
+                self.state = 295
                 localctx.right = self.expression(12)
                 pass
 
@@ -3545,13 +3551,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.ModAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 296
-                localctx.left = self.exprPtrParser()
                 self.state = 297
-                self.match(RiddleParser.Mod)
+                localctx.left = self.exprPtrParser()
                 self.state = 298
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Mod)
                 self.state = 299
+                self.match(RiddleParser.Assign)
+                self.state = 300
                 localctx.right = self.expression(11)
                 pass
 
@@ -3559,13 +3565,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.AddAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 301
-                localctx.left = self.exprPtrParser()
                 self.state = 302
-                self.match(RiddleParser.Add)
+                localctx.left = self.exprPtrParser()
                 self.state = 303
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Add)
                 self.state = 304
+                self.match(RiddleParser.Assign)
+                self.state = 305
                 localctx.right = self.expression(10)
                 pass
 
@@ -3573,13 +3579,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.AndAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 306
-                localctx.left = self.exprPtrParser()
                 self.state = 307
-                self.match(RiddleParser.And)
+                localctx.left = self.exprPtrParser()
                 self.state = 308
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.And)
                 self.state = 309
+                self.match(RiddleParser.Assign)
+                self.state = 310
                 localctx.right = self.expression(9)
                 pass
 
@@ -3587,13 +3593,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.OrAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 311
-                localctx.left = self.exprPtrParser()
                 self.state = 312
-                self.match(RiddleParser.Or)
+                localctx.left = self.exprPtrParser()
                 self.state = 313
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Or)
                 self.state = 314
+                self.match(RiddleParser.Assign)
+                self.state = 315
                 localctx.right = self.expression(8)
                 pass
 
@@ -3601,13 +3607,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.XorAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 316
-                localctx.left = self.exprPtrParser()
                 self.state = 317
-                self.match(RiddleParser.Xor)
+                localctx.left = self.exprPtrParser()
                 self.state = 318
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.Xor)
                 self.state = 319
+                self.match(RiddleParser.Assign)
+                self.state = 320
                 localctx.right = self.expression(7)
                 pass
 
@@ -3615,13 +3621,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.ShlAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 321
-                localctx.left = self.exprPtrParser()
                 self.state = 322
-                self.match(RiddleParser.LeftLeft)
+                localctx.left = self.exprPtrParser()
                 self.state = 323
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.LeftLeft)
                 self.state = 324
+                self.match(RiddleParser.Assign)
+                self.state = 325
                 localctx.right = self.expression(6)
                 pass
 
@@ -3629,13 +3635,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.AShrAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 326
-                localctx.left = self.exprPtrParser()
                 self.state = 327
-                self.match(RiddleParser.RightRight)
+                localctx.left = self.exprPtrParser()
                 self.state = 328
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.RightRight)
                 self.state = 329
+                self.match(RiddleParser.Assign)
+                self.state = 330
                 localctx.right = self.expression(5)
                 pass
 
@@ -3643,13 +3649,13 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.LShrAssignExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 331
-                localctx.left = self.exprPtrParser()
                 self.state = 332
-                self.match(RiddleParser.RightRightRight)
+                localctx.left = self.exprPtrParser()
                 self.state = 333
-                self.match(RiddleParser.Assign)
+                self.match(RiddleParser.RightRightRight)
                 self.state = 334
+                self.match(RiddleParser.Assign)
+                self.state = 335
                 localctx.right = self.expression(4)
                 pass
 
@@ -3657,7 +3663,7 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.StringExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 336
+                self.state = 337
                 self.string()
                 pass
 
@@ -3665,7 +3671,7 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.NumberExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 337
+                self.state = 338
                 self.number()
                 pass
 
@@ -3673,34 +3679,34 @@ class RiddleParser ( Parser ):
                 localctx = RiddleParser.BooleanExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 338
+                self.state = 339
                 self.boolean()
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 405
+            self.state = 406
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,23,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,24,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 403
+                    self.state = 404
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,23,self._ctx)
                     if la_ == 1:
                         localctx = RiddleParser.MulExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 341
+                        self.state = 342
                         if not self.precpred(self._ctx, 35):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 35)")
-                        self.state = 342
-                        self.match(RiddleParser.Star)
                         self.state = 343
+                        self.match(RiddleParser.Star)
+                        self.state = 344
                         localctx.right = self.expression(36)
                         pass
 
@@ -3708,13 +3714,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.DivExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 344
+                        self.state = 345
                         if not self.precpred(self._ctx, 34):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 34)")
-                        self.state = 345
-                        self.match(RiddleParser.Div)
                         self.state = 346
+                        self.match(RiddleParser.Div)
+                        self.state = 347
                         localctx.right = self.expression(35)
                         pass
 
@@ -3722,13 +3728,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.ModExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 347
+                        self.state = 348
                         if not self.precpred(self._ctx, 33):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 33)")
-                        self.state = 348
-                        self.match(RiddleParser.Mod)
                         self.state = 349
+                        self.match(RiddleParser.Mod)
+                        self.state = 350
                         localctx.right = self.expression(34)
                         pass
 
@@ -3736,13 +3742,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.AddExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 350
+                        self.state = 351
                         if not self.precpred(self._ctx, 32):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 32)")
-                        self.state = 351
-                        self.match(RiddleParser.Add)
                         self.state = 352
+                        self.match(RiddleParser.Add)
+                        self.state = 353
                         localctx.right = self.expression(33)
                         pass
 
@@ -3750,13 +3756,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.SubExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 353
+                        self.state = 354
                         if not self.precpred(self._ctx, 31):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 31)")
-                        self.state = 354
-                        self.match(RiddleParser.Sub)
                         self.state = 355
+                        self.match(RiddleParser.Sub)
+                        self.state = 356
                         localctx.right = self.expression(32)
                         pass
 
@@ -3764,13 +3770,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.ShlExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 356
+                        self.state = 357
                         if not self.precpred(self._ctx, 30):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 30)")
-                        self.state = 357
-                        self.match(RiddleParser.LeftLeft)
                         self.state = 358
+                        self.match(RiddleParser.LeftLeft)
+                        self.state = 359
                         localctx.right = self.expression(31)
                         pass
 
@@ -3778,13 +3784,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.AShrExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 359
+                        self.state = 360
                         if not self.precpred(self._ctx, 29):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 29)")
-                        self.state = 360
-                        self.match(RiddleParser.RightRight)
                         self.state = 361
+                        self.match(RiddleParser.RightRight)
+                        self.state = 362
                         localctx.right = self.expression(30)
                         pass
 
@@ -3792,13 +3798,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.LShrExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 362
+                        self.state = 363
                         if not self.precpred(self._ctx, 28):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 28)")
-                        self.state = 363
-                        self.match(RiddleParser.RightRightRight)
                         self.state = 364
+                        self.match(RiddleParser.RightRightRight)
+                        self.state = 365
                         localctx.right = self.expression(29)
                         pass
 
@@ -3806,13 +3812,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.GreaterExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 365
+                        self.state = 366
                         if not self.precpred(self._ctx, 27):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 27)")
-                        self.state = 366
-                        self.match(RiddleParser.Greater)
                         self.state = 367
+                        self.match(RiddleParser.Greater)
+                        self.state = 368
                         localctx.right = self.expression(28)
                         pass
 
@@ -3820,13 +3826,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.LessExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 368
+                        self.state = 369
                         if not self.precpred(self._ctx, 26):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 26)")
-                        self.state = 369
-                        self.match(RiddleParser.Less)
                         self.state = 370
+                        self.match(RiddleParser.Less)
+                        self.state = 371
                         localctx.right = self.expression(27)
                         pass
 
@@ -3834,15 +3840,15 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.GreaterEqualExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 371
+                        self.state = 372
                         if not self.precpred(self._ctx, 25):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 25)")
-                        self.state = 372
-                        self.match(RiddleParser.Greater)
                         self.state = 373
-                        self.match(RiddleParser.Assign)
+                        self.match(RiddleParser.Greater)
                         self.state = 374
+                        self.match(RiddleParser.Assign)
+                        self.state = 375
                         localctx.right = self.expression(26)
                         pass
 
@@ -3850,15 +3856,15 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.LessEqualExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 375
+                        self.state = 376
                         if not self.precpred(self._ctx, 24):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 24)")
-                        self.state = 376
-                        self.match(RiddleParser.Less)
                         self.state = 377
-                        self.match(RiddleParser.Assign)
+                        self.match(RiddleParser.Less)
                         self.state = 378
+                        self.match(RiddleParser.Assign)
+                        self.state = 379
                         localctx.right = self.expression(25)
                         pass
 
@@ -3866,13 +3872,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.EqualExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 379
+                        self.state = 380
                         if not self.precpred(self._ctx, 23):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 23)")
-                        self.state = 380
-                        self.match(RiddleParser.Equal)
                         self.state = 381
+                        self.match(RiddleParser.Equal)
+                        self.state = 382
                         localctx.right = self.expression(24)
                         pass
 
@@ -3880,15 +3886,15 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.NotEqualExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 382
+                        self.state = 383
                         if not self.precpred(self._ctx, 22):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 22)")
-                        self.state = 383
-                        self.match(RiddleParser.Not)
                         self.state = 384
-                        self.match(RiddleParser.Assign)
+                        self.match(RiddleParser.Not)
                         self.state = 385
+                        self.match(RiddleParser.Assign)
+                        self.state = 386
                         localctx.right = self.expression(23)
                         pass
 
@@ -3896,13 +3902,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.BitAndExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 386
+                        self.state = 387
                         if not self.precpred(self._ctx, 21):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 21)")
-                        self.state = 387
-                        self.match(RiddleParser.And)
                         self.state = 388
+                        self.match(RiddleParser.And)
+                        self.state = 389
                         localctx.right = self.expression(22)
                         pass
 
@@ -3910,13 +3916,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.BitXorExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 389
+                        self.state = 390
                         if not self.precpred(self._ctx, 20):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 20)")
-                        self.state = 390
-                        self.match(RiddleParser.Xor)
                         self.state = 391
+                        self.match(RiddleParser.Xor)
+                        self.state = 392
                         localctx.right = self.expression(21)
                         pass
 
@@ -3924,13 +3930,13 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.BitOrExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 392
+                        self.state = 393
                         if not self.precpred(self._ctx, 19):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 19)")
-                        self.state = 393
-                        self.match(RiddleParser.Or)
                         self.state = 394
+                        self.match(RiddleParser.Or)
+                        self.state = 395
                         localctx.right = self.expression(20)
                         pass
 
@@ -3938,15 +3944,15 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.AndExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 395
+                        self.state = 396
                         if not self.precpred(self._ctx, 18):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 18)")
-                        self.state = 396
-                        self.match(RiddleParser.And)
                         self.state = 397
                         self.match(RiddleParser.And)
                         self.state = 398
+                        self.match(RiddleParser.And)
+                        self.state = 399
                         localctx.right = self.expression(19)
                         pass
 
@@ -3954,22 +3960,22 @@ class RiddleParser ( Parser ):
                         localctx = RiddleParser.OrExprContext(self, RiddleParser.ExpressionContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 399
+                        self.state = 400
                         if not self.precpred(self._ctx, 17):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 17)")
-                        self.state = 400
-                        self.match(RiddleParser.Or)
                         self.state = 401
                         self.match(RiddleParser.Or)
                         self.state = 402
+                        self.match(RiddleParser.Or)
+                        self.state = 403
                         localctx.right = self.expression(18)
                         pass
 
              
-                self.state = 407
+                self.state = 408
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,23,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,24,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -4025,20 +4031,20 @@ class RiddleParser ( Parser ):
         self.enterRule(localctx, 38, self.RULE_id)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 408
+            self.state = 409
             self.match(RiddleParser.Identifier)
-            self.state = 413
+            self.state = 414
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,24,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,25,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 409
-                    self.match(RiddleParser.Dot)
                     self.state = 410
+                    self.match(RiddleParser.Dot)
+                    self.state = 411
                     self.match(RiddleParser.Identifier) 
-                self.state = 415
+                self.state = 416
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,24,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,25,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -4089,17 +4095,17 @@ class RiddleParser ( Parser ):
         localctx = RiddleParser.NumberContext(self, self._ctx, self.state)
         self.enterRule(localctx, 40, self.RULE_number)
         try:
-            self.state = 418
+            self.state = 419
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [50, 51, 52, 53]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 416
+                self.state = 417
                 self.integer()
                 pass
             elif token in [54]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 417
+                self.state = 418
                 self.float_()
                 pass
             else:
@@ -4153,18 +4159,18 @@ class RiddleParser ( Parser ):
         localctx = RiddleParser.BooleanContext(self, self._ctx, self.state)
         self.enterRule(localctx, 42, self.RULE_boolean)
         try:
-            self.state = 424
+            self.state = 425
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [16]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 420
+                self.state = 421
                 self.match(RiddleParser.True_)
                 localctx.value=True
                 pass
             elif token in [17]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 422
+                self.state = 423
                 self.match(RiddleParser.False_)
                 localctx.value=False
                 pass
@@ -4216,7 +4222,7 @@ class RiddleParser ( Parser ):
         self.enterRule(localctx, 44, self.RULE_string)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 426
+            self.state = 427
             self.match(RiddleParser.STRING)
         except RecognitionException as re:
             localctx.exception = re
@@ -4265,7 +4271,7 @@ class RiddleParser ( Parser ):
         self.enterRule(localctx, 46, self.RULE_float)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 428
+            self.state = 429
             localctx._Float = self.match(RiddleParser.Float)
             localctx.value = float((None if localctx._Float is None else localctx._Float.text))
         except RecognitionException as re:
@@ -4326,30 +4332,30 @@ class RiddleParser ( Parser ):
         localctx = RiddleParser.IntegerContext(self, self._ctx, self.state)
         self.enterRule(localctx, 48, self.RULE_integer)
         try:
-            self.state = 439
+            self.state = 440
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [51]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 431
+                self.state = 432
                 localctx._Decimal = self.match(RiddleParser.Decimal)
                 localctx.value = int((None if localctx._Decimal is None else localctx._Decimal.text))
                 pass
             elif token in [50]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 433
+                self.state = 434
                 localctx._Hexadecimal = self.match(RiddleParser.Hexadecimal)
                 localctx.value = int((None if localctx._Hexadecimal is None else localctx._Hexadecimal.text)[2:],16)
                 pass
             elif token in [53]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 435
+                self.state = 436
                 localctx._Binary = self.match(RiddleParser.Binary)
                 localctx.value = int((None if localctx._Binary is None else localctx._Binary.text)[2:],2)
                 pass
             elif token in [52]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 437
+                self.state = 438
                 localctx._Octal = self.match(RiddleParser.Octal)
                 localctx.value = int((None if localctx._Octal is None else localctx._Octal.text)[1:],8)
                 pass
@@ -4405,18 +4411,18 @@ class RiddleParser ( Parser ):
         localctx = RiddleParser.TemplateArgContext(self, self._ctx, self.state)
         self.enterRule(localctx, 50, self.RULE_templateArg)
         try:
-            self.state = 443
+            self.state = 444
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,28,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,29,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 441
+                self.state = 442
                 self.expression(0)
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 442
+                self.state = 443
                 self.typeName(0)
                 pass
 
@@ -4477,24 +4483,24 @@ class RiddleParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 454
+            self.state = 455
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1188389761150287872) != 0):
-                self.state = 450
+                self.state = 451
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,29,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,30,self._ctx)
                 while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                     if _alt==1:
-                        self.state = 445
-                        self.templateArg()
                         self.state = 446
+                        self.templateArg()
+                        self.state = 447
                         self.match(RiddleParser.Comma) 
-                    self.state = 452
+                    self.state = 453
                     self._errHandler.sync(self)
-                    _alt = self._interp.adaptivePredict(self._input,29,self._ctx)
+                    _alt = self._interp.adaptivePredict(self._input,30,self._ctx)
 
-                self.state = 453
+                self.state = 454
                 self.templateArg()
 
 
@@ -4574,30 +4580,30 @@ class RiddleParser ( Parser ):
         self.enterRecursionRule(localctx, 54, self.RULE_typeName, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 463
+            self.state = 464
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,31,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,32,self._ctx)
             if la_ == 1:
-                self.state = 457
+                self.state = 458
                 localctx.name = self.id_()
                 pass
 
             elif la_ == 2:
-                self.state = 458
-                localctx.name = self.id_()
                 self.state = 459
-                self.match(RiddleParser.Less)
+                localctx.name = self.id_()
                 self.state = 460
-                localctx.args = self.templateArgs()
+                self.match(RiddleParser.Less)
                 self.state = 461
+                localctx.args = self.templateArgs()
+                self.state = 462
                 self.match(RiddleParser.Greater)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 472
+            self.state = 473
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,32,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,33,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -4606,19 +4612,19 @@ class RiddleParser ( Parser ):
                     localctx = RiddleParser.TypeNameContext(self, _parentctx, _parentState)
                     localctx.baseType = _prevctx
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_typeName)
-                    self.state = 465
+                    self.state = 466
                     if not self.precpred(self._ctx, 1):
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 1)")
-                    self.state = 466
-                    self.match(RiddleParser.LeftSquare)
                     self.state = 467
-                    localctx.size = self.expression(0)
+                    self.match(RiddleParser.LeftSquare)
                     self.state = 468
+                    localctx.size = self.expression(0)
+                    self.state = 469
                     self.match(RiddleParser.RightSquare) 
-                self.state = 474
+                self.state = 475
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,32,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,33,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re

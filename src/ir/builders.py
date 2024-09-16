@@ -100,13 +100,23 @@ class Builder:
     # 进入下一个作用域
     def push(self):
         self.var_manager.push()
+        self.class_manager.push()
 
     # 推出当前作用域
     def pop(self):
         self.var_manager.pop()
+        self.class_manager.pop()
 
-    def getType(self, name: str) -> ir.Type:
+    def get_type(self, name: str) -> ir.Type:
         return self.class_manager.getType(name)
 
-    def getClass(self, name: str) -> Class:
+    def get_class(self, name: str) -> Class:
         return self.class_manager.getClass(name)
+
+    @staticmethod
+    def get_int(value: int) -> ir.Value:
+        return ir.Constant(ir.IntType(32), value)
+
+    @staticmethod
+    def get_float(value: float) -> ir.Value:
+        return ir.Constant(ir.FloatType(), value)

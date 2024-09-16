@@ -1,7 +1,8 @@
+from lib2to3.pytree import Node
+
 from llvmlite import ir
 
 from src.ir.builders import Builder
-from src.ir.types import Class
 from src.parser.RiddleParser import RiddleParser as Parser, RiddleParser
 from src.parser.RiddleParserVisitor import RiddleParserVisitor
 
@@ -25,7 +26,9 @@ class GenVisitor(RiddleParserVisitor):
             return_type = self.visitTypeName(ctx.returnType)
 
         self.builder.create_function(func_name, return_type, func_args)
+        self.builder.push()
         self.visit(ctx.body)
+        self.builder.pop()
 
     def visitDefineArgs(self, ctx: RiddleParser.DefineArgsContext) -> dict[str:str]:
         args: dict[str:str] = {}
@@ -48,15 +51,24 @@ class GenVisitor(RiddleParserVisitor):
 
         return args
 
+    def visitReturnStatement(self, ctx: RiddleParser.ReturnStatementContext):
+        self.builder.create_return(self.visit(ctx.result))
+
     def visitTypeName(self, ctx: RiddleParser.TypeNameContext) -> ir.Type:
         name = ctx.getText()
-        return self.builder.getType(name)
+        return self.builder.get_type(name)
 
-    def visitInteger(self, ctx: RiddleParser.IntegerContext) -> int:
-        return ctx.value
+    def visitInteger(self, ctx: RiddleParser.IntegerContext) -> ir.Value:
+        return self.builder.get_int(ctx.value)
 
-    def visitFloat(self, ctx: RiddleParser.FloatContext) -> float:
-        return ctx.value
+    def visitFloat(self, ctx: RiddleParser.FloatContext) -> ir.Value:
+        return self.builder.get_float(ctx.value)
 
     def visitBoolean(self, ctx: RiddleParser.BooleanContext) -> bool:
         return ctx.value
+
+    def visitString(self, ctx: RiddleParser.StringContext) -> str:
+        return eval(ctx.getText())
+
+    def visitStatement_ed(self, ctx:RiddleParser.Statement_edContext):
+        return self.visit(ctx.children[0])

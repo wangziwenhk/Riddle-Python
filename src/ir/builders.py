@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from llvmlite import ir
 
 from src.ir.managers import VarManager, ClassManager
@@ -43,6 +44,8 @@ class Builder:
         # 进入函数代码块
         block = function.append_basic_block('entry')
         self.llvm_builder = ir.IRBuilder(block)
+
+        return function
 
     def create_add(self, x: ir.Value, y: ir.Value) -> ir.Value:
         if self.llvm_builder is None:
@@ -134,3 +137,9 @@ class Builder:
     @staticmethod
     def get_bool(value: bool) -> ir.Value:
         return ir.Constant(ir.IntType(1), int(value))
+
+    def cond_branch(self, cond, then_block: ir.Block, else_block: ir.Block) -> None:
+        self.llvm_builder.cbranch(cond, then_block, else_block)
+
+    def get_now_block(self) -> ir.Block:
+        return self.llvm_builder.block

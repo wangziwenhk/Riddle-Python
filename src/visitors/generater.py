@@ -2,6 +2,8 @@ from antlr4.tree.Tree import TerminalNodeImpl
 from llvmlite import ir
 
 from src.ir.builders import Builder
+from src.ir.errors import ParserError
+from src.ir.ir_types import Class
 from src.parser.RiddleParser import RiddleParser as Parser, RiddleParser
 from src.parser.RiddleParserVisitor import RiddleParserVisitor
 
@@ -10,6 +12,7 @@ class GenVisitor(RiddleParserVisitor):
     def __init__(self, name: str = ''):
         self.module: ir.Module = ir.Module(name)
         self.builder: Builder = Builder(self.module)
+        self.parent: list[ir.Function | Class] = []
 
     def visitProgram(self, ctx: Parser.ProgramContext):
         self.builder.push()
@@ -26,10 +29,12 @@ class GenVisitor(RiddleParserVisitor):
         else:
             return_type = self.visitTypeName(ctx.returnType)
 
-        self.builder.create_function(func_name, return_type, func_args)
+        function = self.builder.create_function(func_name, return_type, func_args)
         self.builder.push()
+        self.parent.append(function)
         self.visit(ctx.body)
         self.builder.pop()
+        self.parent.pop(-1)
 
     def visitDefineArgs(self, ctx: RiddleParser.DefineArgsContext) -> dict[str, ir.Type]:
         args: dict[str, ir.types] = {}
@@ -67,7 +72,39 @@ class GenVisitor(RiddleParserVisitor):
             typ = value.type
         else:
             typ = ir.VoidType()
-        self.builder.create_variable(typ, name,value)
+        self.builder.create_variable(typ, name, value)
+
+    def visitIfStatement(self, ctx: RiddleParser.IfStatementContext):
+        if not isinstance(self.parent[-1], ir.Function):
+            raise ParserError("if statement only run in function")
+
+        function: ir.Function = self.parent[-1]
+        cond: ir.Value = self.visit(ctx.cond)
+
+        old_block = self.builder.get_now_block()
+        then_block = function.append_basic_block('if.then')
+        else_block = function.append_basic_block('if.else')
+
+        self.builder.cond_branch(cond, then_block, else_block)
+
+        self.builder.llvm_builder.position_at_end(then_block)
+        self.visit(ctx.body)
+        # 防止在 if 语句中 return
+        try:
+            self.builder.llvm_builder.branch(old_block)
+        except AssertionError as e:
+            pass
+
+        self.builder.llvm_builder.position_at_end(else_block)
+        if ctx.hasElse:
+            self.visit(ctx.elseBody)
+        # 防止在 else 语句中 return
+        try:
+            self.builder.llvm_builder.branch(old_block)
+        except AssertionError as e:
+            pass
+
+        self.builder.llvm_builder.position_at_end(old_block)
 
     def visitReturnStatement(self, ctx: RiddleParser.ReturnStatementContext):
         self.builder.create_return(self.visit(ctx.result))

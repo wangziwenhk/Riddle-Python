@@ -1,7 +1,7 @@
 import abc
 
 from llvmlite import ir
-from src.ir.types import Class
+from src.ir.ir_types import Class
 
 
 class BaseManager(abc.ABC):
@@ -27,21 +27,21 @@ class VarManager(BaseManager):
         self.vars: dict[str, list[ir.Value]] = {}
         self.defined: list[list] = []
 
-    def get(self, item: str):
+    def get(self, item: str) -> ir.Value:
         # 该变量不存在
         if item not in self.vars:
             raise KeyError('The variable does not exist')
         return self.vars[item][-1]
 
-    def set(self, key: str, value: ir.Value):
+    def set(self, key: str, value: ir.Value) -> None:
         self.vars[key].append(value)
 
     # 进入下一个作用域
-    def push(self):
+    def push(self) -> None:
         self.defined.append([])
 
     # 退出当前作用域
-    def pop(self):
+    def pop(self) -> None:
         # 销毁当前作用域中声明和定义的变量
         for i in self.defined[-1]:
             self.vars[i].pop()
@@ -59,6 +59,8 @@ class ClassManager(BaseManager):
     def __init__(self):
         self.classes: dict[str, list[Class]] = {}
         self.defined: list[list[str]] = []
+
+
 
     # 仅用于获取类
     def getClass(self, item: str) -> Class:
@@ -78,13 +80,13 @@ class ClassManager(BaseManager):
 
         return self.getClass(item).struct
 
-    def set(self, key: str, value: Class):
+    def set(self, key: str, value: Class) -> None:
         self.classes[key].append(value)
 
-    def push(self):
+    def push(self) -> None:
         self.defined.append([])
 
-    def pop(self):
+    def pop(self) -> None:
         for i in self.defined[-1]:
             self.classes.pop(i)
             if len(self.classes) == 0:

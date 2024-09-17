@@ -1,5 +1,4 @@
-from lib2to3.pytree import Node
-
+from antlr4.tree.Tree import TerminalNodeImpl
 from llvmlite import ir
 
 from src.ir.builders import Builder
@@ -18,8 +17,10 @@ class GenVisitor(RiddleParserVisitor):
         self.builder.pop()
 
     def visitFuncDefine(self, ctx: RiddleParser.FuncDefineContext):
+        if ctx.funcName is None:
+            raise RuntimeError("FuncName is None")
         func_name: str = ctx.funcName.text
-        func_args: dict[str:str] = self.visit(ctx.args)
+        func_args: dict[str, str] = self.visit(ctx.args)
         if ctx.returnType is None:
             return_type = ir.VoidType()
         else:
@@ -30,16 +31,17 @@ class GenVisitor(RiddleParserVisitor):
         self.visit(ctx.body)
         self.builder.pop()
 
-    def visitDefineArgs(self, ctx: RiddleParser.DefineArgsContext) -> dict[str:str]:
-        args: dict[str:str] = {}
+    def visitDefineArgs(self, ctx: RiddleParser.DefineArgsContext) -> dict[str, ir.types]:
+        args: dict[str, ir.types] = {}
         temp_name: str = ""
         temp_type: str = ""
         if ctx.children is None:
             return args
         for i in ctx.children:
             # 参数名称
-            if isinstance(i, RiddleParser.Identifier):
-                temp_name = i.getText()
+            if isinstance(i, TerminalNodeImpl):
+                if i.getSymbol().type == RiddleParser.Identifier:
+                    temp_name = i.getText()
 
             # 参数类型
             if isinstance(i, RiddleParser.TypeNameContext):
@@ -47,9 +49,15 @@ class GenVisitor(RiddleParserVisitor):
 
             # 压入参数
             if temp_name != "" and temp_type != "":
-                args[temp_name] = temp_type
+                args[temp_name] = self.builder.get_type(temp_type)
+                temp_name = ""
+                temp_type = ""
 
         return args
+
+    def visitVarDefineStatement(self, ctx: RiddleParser.VarDefineStatementContext):
+        name: str = ""
+        value: ir.Value
 
     def visitReturnStatement(self, ctx: RiddleParser.ReturnStatementContext):
         self.builder.create_return(self.visit(ctx.result))
@@ -70,5 +78,5 @@ class GenVisitor(RiddleParserVisitor):
     def visitString(self, ctx: RiddleParser.StringContext) -> str:
         return eval(ctx.getText())
 
-    def visitStatement_ed(self, ctx:RiddleParser.Statement_edContext):
+    def visitStatement_ed(self, ctx: RiddleParser.Statement_edContext):
         return self.visit(ctx.children[0])

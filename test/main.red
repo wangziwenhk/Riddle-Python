@@ -1,5 +1,5 @@
 package main;
 
-fun main()->int{
+fun main(a:int,b:int)->int{
     return 1;
 }

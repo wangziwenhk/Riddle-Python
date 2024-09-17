@@ -17,7 +17,7 @@ class BaseType:
 
 
 class Class(BaseType):
-    def __init__(self, context: ir.Context, name: str, types: dict[str:ir.Type] = None, packed: bool = False):
+    def __init__(self, context: ir.Context, name: str, types: dict[str, ir.Type] | None = None, packed: bool = False):
         super().__init__(TypeID.ClassType)
         self.name: str = name
         self.struct: ir.IdentifiedStructType = ir.IdentifiedStructType(context, name, packed)

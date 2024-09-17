@@ -18,13 +18,13 @@ class Builder:
     def get_context(self) -> ir.Context:
         return self.context
 
-    def create_function(self, name: str, return_type: ir.types = ir.VoidType(), args: dict[str, str] | None = None):
+    def create_function(self, name: str, return_type: ir.types = ir.VoidType(), args: dict[str, ir.Type] | None = None):
         if args is None:
             args = {}
 
         # 获取类型
-        args_type = []
-        args_name = []
+        args_type: list[ir.Type] = []
+        args_name: list[str] = []
         for i in args:
             args_name.append(i)
             args_type.append(args[i])
@@ -35,6 +35,8 @@ class Builder:
 
         # 命名
         for i in function.args:
+            if not isinstance(i, ir.Argument):
+                raise RuntimeError("UNKNOWN ERROR")
             i.name = args_name[0]
             args_name.pop(0)
 
@@ -78,19 +80,19 @@ class Builder:
 
     # 创建一个通用变量
     def create_variable(self, typ: ir.Type, name: str = '', value: ir.Value = None, is_const: bool = False) -> ir.Value:
-        if self.llvm_builder is None:
-            raise RuntimeError('Cannot create statement outside the allowed scope')
 
         if self.var_manager.deep() == 1:
             return self.create_global_var(typ, name, value, is_const)
         else:
+            if self.llvm_builder is None:
+                raise RuntimeError('Cannot create statement outside the allowed scope')
             return self.llvm_builder.alloca(typ, name=name)
 
     # 创建一个全局变量
     def create_global_var(self, typ: ir.Type, name: str, value: ir.Value = None, is_const: bool = False) -> ir.Value:
         global_var = ir.GlobalVariable(self.module, typ, name)
         # 初始化
-        global_var.initializer(value)
+        global_var.initializer = value
         # 是否可变
         global_var.global_constant = is_const
         return global_var
@@ -128,3 +130,7 @@ class Builder:
     @staticmethod
     def get_float(value: float) -> ir.Value:
         return ir.Constant(ir.FloatType(), value)
+
+    @staticmethod
+    def get_bool(value: bool) -> ir.Value:
+        return ir.Constant(ir.IntType(1), int(value))

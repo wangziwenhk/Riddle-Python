@@ -20,7 +20,7 @@ class GenVisitor(RiddleParserVisitor):
         if ctx.funcName is None:
             raise RuntimeError("FuncName is None")
         func_name: str = ctx.funcName.text
-        func_args: dict[str, str] = self.visit(ctx.args)
+        func_args: dict[str, ir.Type] = self.visit(ctx.args)
         if ctx.returnType is None:
             return_type = ir.VoidType()
         else:
@@ -31,7 +31,7 @@ class GenVisitor(RiddleParserVisitor):
         self.visit(ctx.body)
         self.builder.pop()
 
-    def visitDefineArgs(self, ctx: RiddleParser.DefineArgsContext) -> dict[str, ir.types]:
+    def visitDefineArgs(self, ctx: RiddleParser.DefineArgsContext) -> dict[str, ir.Type]:
         args: dict[str, ir.types] = {}
         temp_name: str = ""
         temp_type: str = ""
@@ -56,8 +56,18 @@ class GenVisitor(RiddleParserVisitor):
         return args
 
     def visitVarDefineStatement(self, ctx: RiddleParser.VarDefineStatementContext):
-        name: str = ""
-        value: ir.Value
+        if ctx.name is None:
+            raise RuntimeError("name is None")
+        name: str = ctx.name.text
+        value = self.visit(ctx.value) if ctx.value is not None else None
+        typ: ir.Type
+        if ctx.type_ is not None:
+            typ = self.visit(ctx.type_)
+        elif value is not None:
+            typ = value.type
+        else:
+            typ = ir.VoidType()
+        self.builder.create_variable(typ, name,value)
 
     def visitReturnStatement(self, ctx: RiddleParser.ReturnStatementContext):
         self.builder.create_return(self.visit(ctx.result))
@@ -67,13 +77,19 @@ class GenVisitor(RiddleParserVisitor):
         return self.builder.get_type(name)
 
     def visitInteger(self, ctx: RiddleParser.IntegerContext) -> ir.Value:
+        if ctx.value is None:
+            raise RuntimeError("Value is None")
         return self.builder.get_int(ctx.value)
 
     def visitFloat(self, ctx: RiddleParser.FloatContext) -> ir.Value:
+        if ctx.value is None:
+            raise RuntimeError("Value is None")
         return self.builder.get_float(ctx.value)
 
-    def visitBoolean(self, ctx: RiddleParser.BooleanContext) -> bool:
-        return ctx.value
+    def visitBoolean(self, ctx: RiddleParser.BooleanContext) -> ir.Value:
+        if ctx.value is None:
+            raise RuntimeError("Value is None")
+        return self.builder.get_bool(ctx.value)
 
     def visitString(self, ctx: RiddleParser.StringContext) -> str:
         return eval(ctx.getText())
